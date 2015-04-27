@@ -1059,6 +1059,9 @@
         elapsed: ((new Teaspoon.Date().getTime() - this.start.getTime()) / 1000).toFixed(5),
         coverage: window.__coverage__
       });
+
+      console.log("report runner results called");
+
       return Teaspoon.finished = true;
     };
 
