@@ -1062,7 +1062,12 @@
 
       console.log("report runner results called");
 
-      return Teaspoon.finished = true;
+      Teaspoon.finished = true;
+
+      console.log("Value of teaspoon.finished inside of reportrunnerresults function");
+      console.log(Teaspoon.finished);
+
+      return Teaspoon.finished;
     };
 
     Console.prototype.reportSuiteStarting = function(suite) {};
